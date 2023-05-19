@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EdgeShop</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" type="module"></script>
+    <script src="./utils/fn.js" type="module"></script>
+    <script src="./utils/credentials.js" type="module"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="navbar">
+
+            <img src="./assets/logo3.png" alt="Logo EdgeShop" class="navbar__logo">
+
+            <ul class="navbar__links und__eff">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Contacts</a></li>
+                <li><a href="#">About</a></li>
+
+            </ul>
+
+            <form class="navbar__search">
+                <input class="searchInput" type="text" placeholder="Search Product" minlength="3" required>
+            </form>
+
+            <ul class="navbar__user und__eff">
+                <li><a href="#"><button class="navBtn account">👤</button> </a></li>
+                <li><a href="#"><button class="navBtn cart">🛒</button> </a></li>
+            </ul>
+
+        </div>
+
+        <div class="hero">
+            <img src="./assets/stacked-peaks-haikei.png" alt="hero image">
+
+            <div class="hero__content">
+                <h1>Up to 50% off, SHOP NOW!</h1>
+                <button class="hero__button">Buy Now</button>
+            </div>
+
+        </div>
+
+
+        <div class="main__categories">
+            <select name="categories" id="categories" class="categories">
+                <option value="dfl">Pick a category</option>
+                <option class="option" value="smartphones">Smartphones</option>
+                <option class="option" value="laptops">Laptops</option>
+                <option class="option" value="fragrances">Fragrances</option>
+                <option class="option" value="skincare">Skincare</option>
+                <option class="option" value="groceries">Groceries</option>
+                <option class="option" value="home-decoration">Home Decoration</option>
+            </select>
+
+            <select name="price" id="price" class="categories">
+                <option value="dfl">Sort by price</option>
+                <option class="option" value="ascending"> Ascending </option>
+                <option class="option" value="descending"> Descending </option>
+            </select>
+
+            <select name="color" id="color" class="categories">
+                <option value="dfl">Color</option>
+                <option class="option" value="white"> White </option>
+                <option class="option" value="black"> Black </option>
+                <option class="option" value="graphite"> Graphite </option>
+                <option class="option" value="blue"> Blue </option>
+            </select>
+        </div>
+
+
+        <div id="root"></div>
+    </div>
+
+</body>
+
+</html>
