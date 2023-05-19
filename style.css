@@ -621,7 +621,6 @@ body {
   }
 
   .navbar__user {
-    border: 2px solid red;
     height: 10vh;
     display: flex;
     align-items: center;
